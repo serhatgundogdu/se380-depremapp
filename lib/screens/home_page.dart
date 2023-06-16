@@ -5,6 +5,7 @@ import 'package:depremapp/screens/donor_page.dart';
 import 'package:depremapp/screens/earthquakes_page.dart';
 import 'package:depremapp/screens/horn_page.dart';
 import 'package:depremapp/screens/new_request_page.dart';
+import 'package:depremapp/screens/request_list.dart';
 import 'package:depremapp/screens/victim_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hex_color/flutter_hex_color.dart';
@@ -78,10 +79,8 @@ class _HomePageState extends State<HomePage> {
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(8))),
                     onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => DonorPage()),
-                      );
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => TalepList()));
                     },
                     child: Text(
                       "Bağışçı",
@@ -148,11 +147,11 @@ class _HomePageState extends State<HomePage> {
                       ),
                       InkWell(
                         onTap: () {
-                          // Navigator.push(
-                          //   context,
-                          //   MaterialPageRoute(
-                          //       builder: (context) => VictimPage()),
-                          // );
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => TalepList()),
+                          );
                         },
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
