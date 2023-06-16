@@ -80,7 +80,7 @@ class _HomePageState extends State<HomePage> {
                             borderRadius: BorderRadius.circular(8))),
                     onPressed: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => TalepList()));
+                          MaterialPageRoute(builder: (context) => DonorPage()));
                     },
                     child: Text(
                       "Bağışçı",

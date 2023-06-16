@@ -64,7 +64,7 @@ class _VictimPageState extends State<VictimPage> {
     print("phone number is ${phoneNumber}");
 
     if (phoneNumber == null) {
-      Navigator.push(
+      Navigator.pushReplacement(
           context,
           MaterialPageRoute(
               builder: (context) => PhoneNumber(

@@ -33,7 +33,7 @@ class _PhoneNumberState extends State<PhoneNumber> {
 
     // prefs.setString('phone', phoneNumberController.text);
 
-    Navigator.push(
+    Navigator.pushReplacement(
         context,
         MaterialPageRoute(
             builder: (context) => VictimPage(
